@@ -61,6 +61,10 @@ curl -X POST "http://localhost:8000/detect/annotated" \
   --output result.jpg
 ```
 
+**Annotated output:**
+
+![Annotated Output](sample_images/annotated_output.jpg)
+
 ### Adjust confidence threshold
 
 ```bash
