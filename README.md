@@ -1,6 +1,6 @@
 # Perception API
 
-A production-ready REST API for real-time object detection using YOLOv8. Upload an image, get back bounding boxes, class labels, and confidence scores — or receive the image with annotations drawn on it.
+A production-ready REST API for object detection using YOLOv8. Upload an image, get back bounding boxes, class labels, and confidence scores — or receive the image with annotations drawn on it.
 
 Built with FastAPI + Ultralytics YOLOv8. Designed for easy integration into ADAS pipelines, robotics systems, and computer vision applications.
 
@@ -129,7 +129,7 @@ perception-api/
 - **Swap model**: change `model_name` in `ObjectDetector` to any Ultralytics-supported model including YOLOv10, YOLOv9, custom `.pt` weights
 - **Custom weights**: `ObjectDetector(model_name="path/to/custom.pt")`
 - **Add video streaming**: wire `/detect` into a WebSocket endpoint with OpenCV frame capture
-- **Docker**: `docker build -t perception-api . && docker run -p 8000:8000 perception-api`
+- **Environment variable config**: set `MODEL_NAME` to load a different default model at startup
 
 ---
 
